@@ -134,7 +134,8 @@ function Path() {
     checker = new component (25,25,"green","green", 12, 12)
     complete = 0
     num = 0
-    for (c = 0; c < 9; c++) {
+    console.log("E CHECK")
+    for (c = 0; c < 20; c++) {
         for (r = 0; r < 20; r++) {
             checker.x = (r * 50) + 12
             checker.y = (c * 50) + 12
@@ -153,6 +154,7 @@ function Path() {
             }
         }
     }
+    console.log("E DONE",end)
     console.log(coords)
     console.log("Complete")
     queue = [[end[0],end[1],0]]
